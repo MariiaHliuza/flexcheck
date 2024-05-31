@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jura:wght@300..700&display=swap');
+$general_margin_top: 60px;
+$general_margin_left_right: 70px;
+$general_margin_bottom: 50px;
+$color: #3D83D6;
+$grey: #979797;
+$ight_grey: #F4F4F4;
+$mid_grey: #D9D9D9;
+$lightblue: #A6C2DC;
+$paragraph: 16px;
+
+
+/* general styles start */
+body, input, button, p{
+    font-family: "Inter";
+    font-weight: 300;
+}
+h1{
+    font-family: "Jura";
+    font-weight: 700;
+    font-size: 50px;
+    color: $color;
+    padding-bottom: 80px;
+}
+h2{
+    font-family: "Jura";
+    font-weight: 700;
+    font-size: 40px;
+    color: $color;
+}
+h3{
+    font-weight: 600;
+    font-size: 24px;
+    color: $color;
+}
+h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: $color;
+}
+button{
+    font-family: "Jura";
+    font-size: 32px;
+    background-color: $color;
+    border: none;
+    color: white;
+    padding: 16px 65px 16px 65px;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+button:hover{
+    color: $color;
+    background-color: white;
+    outline:1px solid $color;
+    border-color: $color;
+}
+a{
+    color: none;
+    text-decoration: none;
+}
+p{
+    font-size: $paragraph;
+}
+/* general styles end */
+
+
+/* login styles start*/
+body{
+    position: relative;
+}
+.logo{
+    position: absolute;
+    left: $general_margin_left_right;
+    top: $general_margin_left_right;
+}
+.main{
+    background-image: url(src/background.svg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    &-block-login{
+        display: grid;
+        grid-template-columns: 55% 45%;
+        align-items: center;
+        justify-items: center;
+        height: 100%;
+        .active{
+            background-color: white;
+            height: 100%;
+            width: 100%;
+            .active-block{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                &-form{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    &__input--name, &__input--password{
+                        width: 588px;
+                        height: 87px;
+                        border: none;
+                        background-color: $ight_grey;
+                        color: $grey;
+                        font-size: 24px;
+                        padding-left: 23px;
+                        border-radius: 10px;
+                        transition: all 0.1s;
+                        &:hover, &:focus{
+                            outline: 1px solid $grey;
+                        }
+                    }
+                    &__input--name{
+                        margin-bottom: 42px;
+                    }
+                    &__input--password{
+                        margin-bottom: 29px;
+                    }
+                    &__span{
+                        color: $lightblue;
+                        font-size: 20px;
+                    }
+                    &__button{
+                        margin-top: 77px;
+                    }
+                }
+            }
+            }
+        }
+        .jump{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__paragraph, &__heading{
+                color: white;
+            }
+            &__paragraph{
+                max-width: 431px;
+                text-align: center;
+                padding-bottom: 70px;
+                font-size: 24px;
+            }
+            &__button{
+                background-color: white;
+                color: $color;
+                &:hover{
+                    background-color: $color;
+                    outline: 1px solid white;
+                    color: white;
+                }
+            }
+        }
+}
+
+/* login styles end*/
+
+/* main page styles start*/
+.main-body{
+    margin: $general_margin_top $general_margin_left_right $general_margin_bottom $general_margin_left_right;
+}
+.up-pannel{
+    &-block{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .search{
+            &-form{
+                display: flex;
+                align-items: center;
+                position: relative;
+                &__input{
+                    width: 566px;
+                    height: 51px;
+                    background-color: $ight_grey;
+                    color: $grey;
+                    border: none;
+                    border-radius: 100px;
+                    padding-left: 31px;
+                    font-size: 20px;
+                    &:focus{
+                        outline: 1px solid $grey;
+                    }
+                }
+                &__button{
+                    left: 92%;
+                    position: absolute;
+                    background-color: $ight_grey;
+                    background-image: url(src/search\ icon.svg);
+                    width: 29px;
+                    height: 29px;
+                    background-size: cover;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+        .button{
+            .logout{
+                height: 51px;
+                width: 156px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+            }
+        }
+    }
+}
+.heading{
+    padding-top: 83px;
+}
+.pannel{
+    display: flex;
+    justify-content: space-between;
+    &__paragraph{
+        font-weight: 600;
+        color: $color;
+        font-size: 16px;
+    }
+    .progress{
+        display: flex;
+        align-items: center;
+        color: $color;
+        &-circles{
+            padding-left: 9px;
+            padding-right: 9px;
+            display: flex;
+            align-items: center;
+            &__element{
+                &--done, &--currently, &--off{
+                    content: "";
+                    height: 16px;
+                    width: 16px;
+                    border-radius: 100px;
+                    background-color: #979797;
+                    margin-right: 7px;
+                    &:last-child{
+                        margin-right: 0px;
+                    }
+                }
+                &--done{
+                    background-color: $color;
+                }
+                &--currently{
+                    background-color: white;
+                    outline: 1px solid $color;
+                }
+                &--off{
+                    background-color: $mid_grey;
+                }
+
+            }
+        }
+    }
+}
+.main-block{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 18% 82%;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    border-right: 1px solid $lightblue;
+    &__heading{
+        padding-bottom: 50px;
+    }
+    &-nav{
+        display: flex;
+        flex-direction: column;
+        &__span, &__span--bold{
+            padding-bottom: 20px;
+            font-size: $paragraph;
+            width: auto;
+            &:last-child{
+                padding-bottom: 0px;
+            }
+            &:hover{
+                font-weight: 600;
+            }
+            a{
+                color: black;
+            }
+        }
+        &__span--bold{
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &::after{
+                content: "";
+                background-image: url(src/Vector\ 3.svg);
+                background-size: cover;
+                display: block;
+                width: 26px;
+                height: 9px;
+            }
+        }
+
+    }
+}
+.content{
+    padding-left: 50px;
+    &-up{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        &-control{
+            font-family: "Jura";
+            font-size: 20px;
+            font-weight: 600;
+            display: flex;
+            a{
+                color: $grey;
+            }
+            &-previous{
+                display: flex;
+                align-items: center;
+                &::after{
+                    content: "";
+                    display: block;
+                    height: 18px;
+                    width: 1px;
+                    background-color: $grey;
+                    margin-left: 20px;
+                }
+            }
+                &-next{
+                    padding-left: 20px;
+            }
+        }
+    }
+}
+.content-main{
+    h4{
+        padding-top: 31px;
+        padding-bottom: 27px;
+    }
+    p{
+        line-height: 135%;
+    }
+}
+.footer{
+    margin-top: 100px;
+    margin-bottom: 42px;
+    display: flex;
+    justify-content: space-between;
+    &-info{
+        a{
+            color: $lightblue;
+            padding-right: 43px;
+        }
+    }
+    &-rights{
+        color: $grey;
+    }
+}
+/* main page styles end*/

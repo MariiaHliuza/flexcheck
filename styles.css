@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jura:wght@300..700&display=swap");
+/* general styles start */
+body, input, button, p {
+  font-family: "Inter";
+  font-weight: 300;
+}
+
+h1 {
+  font-family: "Jura";
+  font-weight: 700;
+  font-size: 50px;
+  color: #3D83D6;
+  padding-bottom: 80px;
+}
+
+h2 {
+  font-family: "Jura";
+  font-weight: 700;
+  font-size: 40px;
+  color: #3D83D6;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #3D83D6;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #3D83D6;
+}
+
+button {
+  font-family: "Jura";
+  font-size: 32px;
+  background-color: #3D83D6;
+  border: none;
+  color: white;
+  padding: 16px 65px 16px 65px;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+button:hover {
+  color: #3D83D6;
+  background-color: white;
+  outline: 1px solid #3D83D6;
+  border-color: #3D83D6;
+}
+
+a {
+  color: none;
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* general styles end */
+/* login styles start*/
+body {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  left: 70px;
+  top: 70px;
+}
+
+.main {
+  background-image: url(src/background.svg);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.main-block-login {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+}
+.main-block-login .active {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+.main-block-login .active .active-block {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-block-login .active .active-block-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-block-login .active .active-block-form__input--name, .main-block-login .active .active-block-form__input--password {
+  width: 588px;
+  height: 87px;
+  border: none;
+  background-color: #F4F4F4;
+  color: #979797;
+  font-size: 24px;
+  padding-left: 23px;
+  border-radius: 10px;
+  transition: all 0.1s;
+}
+.main-block-login .active .active-block-form__input--name:hover, .main-block-login .active .active-block-form__input--name:focus, .main-block-login .active .active-block-form__input--password:hover, .main-block-login .active .active-block-form__input--password:focus {
+  outline: 1px solid #979797;
+}
+.main-block-login .active .active-block-form__input--name {
+  margin-bottom: 42px;
+}
+.main-block-login .active .active-block-form__input--password {
+  margin-bottom: 29px;
+}
+.main-block-login .active .active-block-form__span {
+  color: #A6C2DC;
+  font-size: 20px;
+}
+.main-block-login .active .active-block-form__button {
+  margin-top: 77px;
+}
+.main .jump {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .jump__paragraph, .main .jump__heading {
+  color: white;
+}
+.main .jump__paragraph {
+  max-width: 431px;
+  text-align: center;
+  padding-bottom: 70px;
+  font-size: 24px;
+}
+.main .jump__button {
+  background-color: white;
+  color: #3D83D6;
+}
+.main .jump__button:hover {
+  background-color: #3D83D6;
+  outline: 1px solid white;
+  color: white;
+}
+
+/* login styles end*/
+/* main page styles start*/
+.main-body {
+  margin: 60px 70px 50px 70px;
+}
+
+.up-pannel-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.up-pannel-block .search-form {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.up-pannel-block .search-form__input {
+  width: 566px;
+  height: 51px;
+  background-color: #F4F4F4;
+  color: #979797;
+  border: none;
+  border-radius: 100px;
+  padding-left: 31px;
+  font-size: 20px;
+}
+.up-pannel-block .search-form__input:focus {
+  outline: 1px solid #979797;
+}
+.up-pannel-block .search-form__button {
+  left: 92%;
+  position: absolute;
+  background-color: #F4F4F4;
+  background-image: url(src/search\ icon.svg);
+  width: 29px;
+  height: 29px;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+.up-pannel-block .button .logout {
+  height: 51px;
+  width: 156px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.heading {
+  padding-top: 83px;
+}
+
+.pannel {
+  display: flex;
+  justify-content: space-between;
+}
+.pannel__paragraph {
+  font-weight: 600;
+  color: #3D83D6;
+  font-size: 16px;
+}
+.pannel .progress {
+  display: flex;
+  align-items: center;
+  color: #3D83D6;
+}
+.pannel .progress-circles {
+  padding-left: 9px;
+  padding-right: 9px;
+  display: flex;
+  align-items: center;
+}
+.pannel .progress-circles__element--done, .pannel .progress-circles__element--currently, .pannel .progress-circles__element--off {
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 100px;
+  background-color: #979797;
+  margin-right: 7px;
+}
+.pannel .progress-circles__element--done:last-child, .pannel .progress-circles__element--currently:last-child, .pannel .progress-circles__element--off:last-child {
+  margin-right: 0px;
+}
+.pannel .progress-circles__element--done {
+  background-color: #3D83D6;
+}
+.pannel .progress-circles__element--currently {
+  background-color: white;
+  outline: 1px solid #3D83D6;
+}
+.pannel .progress-circles__element--off {
+  background-color: #D9D9D9;
+}
+
+.main-block {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 18% 82%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  border-right: 1px solid #A6C2DC;
+}
+.menu__heading {
+  padding-bottom: 50px;
+}
+.menu-nav {
+  display: flex;
+  flex-direction: column;
+}
+.menu-nav__span, .menu-nav__span--bold {
+  padding-bottom: 20px;
+  font-size: 16px;
+  width: auto;
+}
+.menu-nav__span:last-child, .menu-nav__span--bold:last-child {
+  padding-bottom: 0px;
+}
+.menu-nav__span:hover, .menu-nav__span--bold:hover {
+  font-weight: 600;
+}
+.menu-nav__span a, .menu-nav__span--bold a {
+  color: black;
+}
+.menu-nav__span--bold {
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-nav__span--bold::after {
+  content: "";
+  background-image: url(src/Vector\ 3.svg);
+  background-size: cover;
+  display: block;
+  width: 26px;
+  height: 9px;
+}
+
+.content {
+  padding-left: 50px;
+}
+.content-up {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.content-up-control {
+  font-family: "Jura";
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+}
+.content-up-control a {
+  color: #979797;
+}
+.content-up-control-previous {
+  display: flex;
+  align-items: center;
+}
+.content-up-control-previous::after {
+  content: "";
+  display: block;
+  height: 18px;
+  width: 1px;
+  background-color: #979797;
+  margin-left: 20px;
+}
+.content-up-control-next {
+  padding-left: 20px;
+}
+
+.content-main h4 {
+  padding-top: 31px;
+  padding-bottom: 27px;
+}
+.content-main p {
+  line-height: 135%;
+}
+
+.footer {
+  margin-top: 100px;
+  margin-bottom: 42px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-info a {
+  color: #A6C2DC;
+  padding-right: 43px;
+}
+.footer-rights {
+  color: #979797;
+}
+
+/* main page styles end*//*# sourceMappingURL=styles.css.map */

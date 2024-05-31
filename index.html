@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexcheck</title>
+    <link rel="icon" href="src/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normilize.css">
+</head>
+<body class="main-body">
+    <div class="up-pannel">
+        <div class="up-pannel-block">
+            <div class="up-pannel-logo">
+                <a href="#"><img src="src/logo.svg" alt="logo"></a>
+            </div>
+            <div class="search">
+                <form class="search-form">
+                    <input type="text" class="search-form__input" placeholder="Пошук">
+                    <input class="search-form__button" type="button">
+                </form>
+            </div>
+            <div class="button">
+                <button class="logout">Вихід</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- The username changes depending on the information entered   -->
+    <h1 class="heading">Вітаємо, <span class="heading__span" id="name">username</span>!</h1>
+    <div class="pannel">
+        <p class="pannel__paragraph">Персональний гайд з CSS-властивості - Flexbox</p>
+        <div class="progress">
+            <span class="progress-text">Прогрес:</span>
+            <div class="progress-circles">
+                <!-- Element styles depending on the material covered   -->
+                <div class="progress-circles__element--done"></div>
+                <div class="progress-circles__element--currently"></div>
+                <div class="progress-circles__element--off"></div>
+                <div class="progress-circles__element--off"></div>
+                <div class="progress-circles__element--off"></div>
+                <div class="progress-circles__element--off"></div>
+                <div class="progress-circles__element--off"></div>
+                <div class="progress-circles__element--off"></div>
+                <div class="progress-circles__element--off"></div>
+                <div class="progress-circles__element--off"></div>
+            </div>
+            <span class="progress-procent" id="progressProcent">10%</span>
+        </div>
+    </div>
+
+    <div class="main-block">
+        <aside class="menu">
+            <h3 class="menu__heading">Зміст</h3>
+            <nav class="menu-nav">
+                <span class="menu-nav__span--bold"><a href="#">Початок</a></span>
+                <span class="menu-nav__span--bold"><a href="#">Основи</a></span>
+                <span class="menu-nav__span"><a href="#">Властивості</a></span>
+                <span class="menu-nav__span"><a href="#">Prefixing Flexbox</a></span>
+                <span class="menu-nav__span"><a href="#">Приклади</a></span>
+                <span class="menu-nav__span"><a href="#">Лайфхаки</a></span>
+                <span class="menu-nav__span"><a href="#">Сумісність з браузерами</a></span>
+                <span class="menu-nav__span"><a href="#">Ресурси</a></span>
+            </nav>
+        </aside>
+        <div class="content">
+            <div class="content-up">
+                <!-- Heading is dynamic, and is changed according to chosing value on nav   -->
+                <h2 class="content-up__heading">Основи</h2>
+                <div class="content-up-control">
+                    <span class="content-up-control-previous"><a href="#">Попереднє</a></span>
+                    <span class="content-up-control-next"><a href="#">Наступне</a></span>
+                </div>
+            </div>
+            <!-- Contain is dynamic   -->
+            <div class="content-main">
+                <p class="content-main-paragraph">
+                    Flexbox - це нова технологія, яка має досить широку підтримку браузерів. Flexbox надає інструменти для швидкого створення складних, гнучких макетів та функції, які були складні в традиційних методах CSS. У цій статті пояснюються всі основи цієї технології.
+                </p>
+                <h4 class="content-main-heading">Що потрібно знати?</h4>
+                <p class="content-main-paragraph">
+                    Flexbox - це нова технологія, яка має досить широку підтримку браузерів. Flexbox надає інструменти для швидкого створення складних, гнучких макетів та функції, які були складні в традиційних методах CSS. У цій статті пояснюються всі основи цієї технології.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-info">
+            <span class="footer-info__span"><a href="#">Website Privacy Notice</a></span>
+            <span class="footer-info__span"><a href="#">Cookies</a></span>
+            <span class="footer-info__span"><a href="#">Правила користування</a></span>
+            <span class="footer-info__span"><a href="#">Служба підтримки</a></span>
+        </div>
+        <span class="footer-rights">Усі авторські права захищені.</span>
+    </footer>
+
+</body>
+</html>
